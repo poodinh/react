@@ -10,7 +10,7 @@ const title= React.createElement('h2',
   {class:'titulo'},
   'Hello Edit!'
 )
-
+let cubos=[];
 for (let i=0; i<5;i++){
   cubos.push(cubo);
 } //para n escrever 6 vezes cubo
