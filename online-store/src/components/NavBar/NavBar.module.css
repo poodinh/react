@@ -1,0 +1,10 @@
+/*usa-se o module para criar modules e n haver override de css*/
+.main-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logoWrapper{
+    max-width: 100px;
+}
