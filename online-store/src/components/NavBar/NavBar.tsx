@@ -1,20 +1,17 @@
-//Assim importa-se imagens, costumam estar nos assets
-import Logo from '../../assets/svg/logo.svg'
-//importar modulo de css
+// Assim importamos assets de imagem (SVG, JPEG, PNG)
+import logoSVG from '../../assets/svg/logo.svg'
 import style from './NavBar.module.css'
-//npm install --save-dev @iconify/react na pasta da online-store
+
 import { Icon } from '@iconify/react';
 
-// 1- criar uma função
-function NavBar(){
-    // 2- Obrigatório ter um return
-    // {style["main-header"]} por causa do traço do meio do main-header
-    // {style.logoWrapper} se não tiver hifen no meio
-    // tmbm dá `${style.logoWrapper} ${style["main-header"]}` caso queiramos os dois no msm cenas
+//1 - Criar uma função
+function NavBar() {
+
+    //2 - Obrigatorio ter um return
     return (
         <div className={style['main-header']}>
             <div className={`${style.logoWrapper}`}>
-                <img src={Logo} alt="logo" />
+                <img src={logoSVG} alt="logo" />
             </div>
 
             <nav className={style.linksWrapper}>
@@ -42,15 +39,6 @@ function NavBar(){
             </nav>
         </div>)
 }
+
 //3 - Exportar o componente (funcao)
 export default NavBar;
-
-
-/*  Espaço para os meus comentários :3
-se se instalar a cena que ele falou na aula de 1/7 dá para ter atalho para criar a base do componente!!
-podemos chamar na app enquanto trabalhamos nele para ir renderizando e vermos o que se está a passar
-
-
-
-
-*/
