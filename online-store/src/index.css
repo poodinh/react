@@ -1,7 +1,32 @@
-*{
-    font-family: "Montserrat", sans-serif;
+/* Criação de uma fonte "pessoal" */
+@font-face {
+	font-family: "batatas";
+	src: url(http://localhost:5173/public/fonts/PPSupplySans-Regular.ttf);
 }
 
-img{
-    width: 100%;
+:root {
+	--t-primary: #23a6f0;
+	--t-grey: #737373;
+	--black: #000;
+	--t-white: #fff;
+	--t-muted: #bdbdbd;
+}
+
+html {
+	font-size: 16px;
+	font-size: 62.5%;
+}
+
+* {
+	font-family: "Montserrat", sans-serif;
+	box-sizing: border-box;
+}
+
+img {
+	width: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
 }

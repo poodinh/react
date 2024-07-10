@@ -1,0 +1,26 @@
+.wrapper {
+	text-align: center;
+	margin-bottom: 8rem;
+}
+
+.wrapper h2 {
+	font-size: 2.4rem;
+	font-weight: bold;
+	line-height: 3.2rem;
+	letter-spacing: 0.01rem;
+	margin-bottom: 1rem;
+	text-transform: uppercase;
+}
+
+.wrapper h4 {
+	font-size: 2rem;
+	font-weight: bold;
+	line-height: 3rem;
+	letter-spacing: 0.02rem;
+	margin-bottom: 1rem;
+	color: var(--t-grey);
+}
+
+.wrapper p {
+	color: var(--t-grey);
+}

@@ -1,0 +1,10 @@
+.section {
+	width: 100%;
+	max-width: calc(114rem - 3rem);
+	margin: 0 auto;
+	padding: 8rem 3rem;
+}
+
+.section.fullwidth {
+	max-width: 100%;
+}
