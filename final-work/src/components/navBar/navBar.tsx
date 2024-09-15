@@ -75,7 +75,8 @@ const NavBar = (props: navBarType) => {
       </nav>
       {props.buttonText ? (
         <div className={style.contactButton}>
-          <button>{buttonText}</button>
+          <Link
+              to="Contact"><button onClick={() => handleClick(4)}>{buttonText}</button></Link>
         </div>
       ) : (
         ""
