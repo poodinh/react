@@ -1,0 +1,20 @@
+.card{
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    background: linear-gradient(135deg, rgba(153,111,212,1) 0%, rgba(184,117,214,0.46271008403361347) 0%, rgba(0,0,0,1) 80%);
+}
+
+.group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    background: linear-gradient(135deg, rgba(153,111,212,1) 0%, rgba(184,117,214,0.46271008403361347) 0%, rgba(0,0,0,1) 100%);
+    p{
+        color: var(--t-grey);
+    }
+}

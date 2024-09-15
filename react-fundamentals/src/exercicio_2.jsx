@@ -7,7 +7,7 @@ const fs= React.createElement('div',
 )
 //-----
 const image=React.createElement('img',
-  {src:'path para imagem',
+  {src:'./male1085727541717.jpg',
     alt:'alt de imagem'
   }
 )
@@ -17,7 +17,7 @@ const avatar=React.createElement('div',
 )
 //----
 const link=React.createElement('a',
-  {href:'link para perfil',
+  {href:'https://www.fakepersongenerator.com/',
     target:'_blank'
   },
   'Inserir nome'

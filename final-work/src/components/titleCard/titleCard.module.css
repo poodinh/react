@@ -1,0 +1,12 @@
+.group{
+    padding: 0;
+    display: flex;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    img{
+        width: 4rem;
+        height: auto;
+    }
+}

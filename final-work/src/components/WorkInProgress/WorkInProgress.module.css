@@ -1,0 +1,19 @@
+.group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    img {
+      width: 4rem;
+      height: auto;
+    }
+    padding: 2rem;
+    border-radius: 2rem;
+    background: linear-gradient(
+      135deg,
+      rgba(153, 111, 212, 1) 0%,
+      rgba(184, 117, 214, 0.46271008403361347) 0%,
+      rgba(0, 0, 0, 1) 80%
+    );
+    margin-bottom: 2rem; 
+}
