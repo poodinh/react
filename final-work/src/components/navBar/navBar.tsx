@@ -1,6 +1,5 @@
 import style from "./navBar.module.css";
-import { Link } from "react-router-dom";
-import { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 
 type navBarType = {
   logo: string;
@@ -11,9 +10,7 @@ type navBarType = {
 const NavBar = (props: navBarType) => {
   const { logo, navList, buttonText } = props;
 
-    const [selected, setSelected] = useState(null);
-    const handleClick = (index:any) => {
-      setSelected(index);}
+  // let selected:number | undefined = 1
 
   return (
     <div className={buttonText ? style.mainHeader : style.mainFooter}>
@@ -23,60 +20,49 @@ const NavBar = (props: navBarType) => {
       <nav className={style.mainMenu}>
         <ul>
           <li>
-            <Link to="/">
-              <p
-                style={{
-                  color: selected===1 ? "rgba(255, 255, 255)":"#acacac" ,
-                }}
-                onClick={() => handleClick(1)}
-              >
-                {navList[0]}
-              </p>
-            </Link>
-          </li>
-          <li>
-            <Link to="/About">
-              <p
-                style={{
-                  color: selected===2 ? "rgba(255, 255, 255)":"#acacac",
-                }}
-                onClick={() => handleClick(2)}
-              >
-                {navList[1]}
-              </p>
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/WorkInProgress">
-              <p
-                style={{
-                  color: selected===3 ? "rgba(255, 255, 255)":"#acacac",
-                }}
-                onClick={() => handleClick(3)}
-              >
-              {navList[2]} </p>
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="Contact">
-              <p
-                style={{
-                  color: selected===4 ? "rgba(255, 255, 255)":"#acacac",
-                }}
-                onClick={() => handleClick(4)}
-              
+            <NavLink
+              to="/"
+              end
+              className={({ isActive }) => (isActive ? "active-link" : "")}
+              style={({ isActive }) => isActive ? { color: 'rgb(255, 255, 255)'} : {}}
             >
-              {navList[3]} </p>
-            </Link>
+              {navList[0]}
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/About"
+              className={({ isActive }) => (isActive ? "active-link" : "")}
+              style={({ isActive }) => isActive ? { color: 'rgb(255, 255, 255)' } : {}}
+            >
+              {navList[1]}
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/WorkInProgress"
+              className={({ isActive }) => (isActive ? "active-link" : "")}
+              style={({ isActive }) => isActive ? { color: 'rgb(255, 255, 255)'} : {}}
+            >
+              {navList[2]}
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="Contact"
+              className={({ isActive }) => (isActive ? "active-link" : "")}
+              style={({ isActive }) => isActive ? { color: 'rgb(255, 255, 255)'} : {}}
+            >
+              {navList[3]}
+            </NavLink>
           </li>
         </ul>
       </nav>
       {props.buttonText ? (
         <div className={style.contactButton}>
-          <Link
-              to="Contact"><button onClick={() => handleClick(4)}>{buttonText}</button></Link>
+          <Link to="Contact">
+            <button>{buttonText}</button>
+          </Link>
         </div>
       ) : (
         ""

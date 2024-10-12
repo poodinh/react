@@ -182,6 +182,7 @@ const MainCard = (props: CardType) => {
                   onMouseLeave={()=>setHovered(!hovered)}
                   src={hovered==true?"/src/assets/button-grey.png":"/src/assets/button-white.png"}
                   alt=""
+                  id="mainButton"
                   className={pageButton}
                 />
               </Link>
